@@ -11,7 +11,7 @@ data class MessageHandlerEnvironment(
     val message: Message
 )
 
-internal class MessageHandler(
+open class MessageHandler(
     private val filter: Filter,
     private val handleMessage: suspend MessageHandlerEnvironment.() -> Unit
 ) : Handler {

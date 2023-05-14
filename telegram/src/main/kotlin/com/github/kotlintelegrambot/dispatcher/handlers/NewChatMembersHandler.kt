@@ -12,7 +12,7 @@ data class NewChatMembersHandlerEnvironment(
     val newChatMembers: List<User>
 )
 
-internal class NewChatMembersHandler(
+open class NewChatMembersHandler(
     private val handleNewChatMembers: HandleNewChatMembers
 ) : Handler {
 

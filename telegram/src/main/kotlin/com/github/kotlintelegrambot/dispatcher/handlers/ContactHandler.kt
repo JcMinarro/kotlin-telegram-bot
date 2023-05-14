@@ -12,7 +12,7 @@ data class ContactHandlerEnvironment(
     val contact: Contact
 )
 
-internal class ContactHandler(
+open class ContactHandler(
     private val handleContact: HandleContact
 ) : Handler {
 

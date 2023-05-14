@@ -12,7 +12,7 @@ data class LocationHandlerEnvironment(
     val location: Location
 )
 
-internal class LocationHandler(
+open class LocationHandler(
     private val handleLocation: HandleLocation
 ) : Handler {
 

@@ -10,7 +10,7 @@ data class PollAnswerHandlerEnvironment(
     val pollAnswer: PollAnswer
 )
 
-internal class PollAnswerHandler(
+open class PollAnswerHandler(
     private val handlePollAnswer: HandlePollAnswer
 ) : Handler {
 

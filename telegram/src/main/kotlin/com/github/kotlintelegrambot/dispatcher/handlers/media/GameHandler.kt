@@ -5,7 +5,7 @@ import com.github.kotlintelegrambot.entities.Game
 import com.github.kotlintelegrambot.entities.Message
 import com.github.kotlintelegrambot.entities.Update
 
-internal class GameHandler(
+open class GameHandler(
     handleGame: HandleGame
 ) : MediaHandler<Game>(
     handleGame,

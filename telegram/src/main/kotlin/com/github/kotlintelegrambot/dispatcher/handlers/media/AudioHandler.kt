@@ -5,7 +5,7 @@ import com.github.kotlintelegrambot.entities.Message
 import com.github.kotlintelegrambot.entities.Update
 import com.github.kotlintelegrambot.entities.files.Audio
 
-internal class AudioHandler(
+open class AudioHandler(
     handleAudio: HandleAudio
 ) : MediaHandler<Audio>(
     handleAudio,
